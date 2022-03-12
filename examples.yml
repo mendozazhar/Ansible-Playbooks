@@ -6,5 +6,5 @@
   tasks:
     - name: "User gets created"
       user:
-        name: testuser
+        name: lebronjames
         state: present
