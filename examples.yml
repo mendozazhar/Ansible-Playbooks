@@ -4,7 +4,8 @@
   become: true
 
   tasks:
-    - name: "User gets created"
+    - name: "User gets created and gets added to group"
       user:
-        name: testuser
+        name: lebronjames
         state: present
+        group: wheel
