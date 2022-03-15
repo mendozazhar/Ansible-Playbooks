@@ -4,7 +4,8 @@
   become: true
 
   tasks:
-    - name: "Removing........."
-      user: lebronjames,testuser
-      state: present
-      remove: yes
+    - name: Users are being removed
+      user:
+        name: lebronjames,testuser
+        state: present
+        remove: yes
