@@ -9,3 +9,13 @@
         name: lebronjames
         state: present
         group: wheel
+
+- name: "Lets go ahead and remove the user now"
+  host: webservers
+  become: true
+
+  tasks:
+    - name: "Lets remove the users"
+      user: lebronjames,testuser
+      state: present
+      remove: yes
