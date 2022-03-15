@@ -6,5 +6,9 @@
   tasks:
     - name: "User gets created"
       user:
-        name: lebronjames
+        name: testuser
         state: present
+    - name: "User gets added to groups"
+      user:
+        name: testuser
+        group: wheel
