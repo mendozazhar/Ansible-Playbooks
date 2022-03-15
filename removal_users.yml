@@ -1,6 +1,6 @@
 ---
 - name: Lets go ahead and remove the user now
-  host: webservers
+  hosts: webservers
   become: true
 
   tasks:
